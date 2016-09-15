@@ -1,0 +1,57 @@
+\begin{figure}[h]
+\begin{center}
+    \begin{tikzpicture}
+        % left
+        \factor[]{s-factor1}{above:$\mathcal{N}(s_1 \given \mu_1, \sigma_1^2+\tau^2)$}{}{};
+        \node[latent, below=of s-factor1, yshift=0.5cm] (s1) {$s_1$};
+        \factor[below=of s1, yshift=-0.5cm]{sp-factor1}{left:$\mathcal{N}(p_1 \given s_1, \beta^2)$} {}{};
+        \node[latent, below=of sp-factor1, yshift=0.5cm] (p1) {$p_1$};
+        \factor[below=of p1] {pt-factor1} {left:$\mathbbm{I}(t_1=p_1)$}{}{};
+        \node[latent, below=of pt-factor1, yshift=0.5cm] (t1) {$t_1$};
+        
+        % left-connections
+        \edge[-]{s-factor1}{s1}
+        \edge[-]{s1}{sp-factor1}
+        \edge[-]{sp-factor1}{p1}
+        \edge[-]{p1}{pt-factor1}
+        \edge[-]{pt-factor1}{t1}
+        
+        
+        % right
+        \factor[right=of s-factor1,xshift=3cm]{s-factor2}{above:$\mathcal{N}(s_1 \given \mu_1, \sigma_1^2+\tau^2)$}{}{};
+        \node[latent, below=of s-factor2, yshift=0.5cm] (s2) {$s_2$};
+        \factor[below=of s2, yshift=-0.5cm]{sp-factor2}{left:$\mathcal{N}(p_2 \given s_2, \beta^2)$} {}{};
+        \node[latent, below=of sp-factor2, yshift=0.5cm] (p2) {$p_2$};
+        \factor[below=of p2] {pt-factor2} {left:$\mathbbm{I}(t_2=p_2)$}{}{};
+        \node[latent, below=of pt-factor2, yshift=0.5cm] (t2) {$t_2$};
+        
+        % right-connections
+        \edge[-]{s-factor2}{s2}
+        \edge[-]{s2}{sp-factor2}
+        \edge[-]{sp-factor2}{p2}
+        \edge[-]{p2}{pt-factor2}
+        \edge[-]{pt-factor2}{t2}
+        
+        % middle 
+        \factor[below=of t1, xshift=2cm, yshift=-0.5cm] {td-factor} {left:$\mathbbm{I}(d=t_1-t_2)$}{}{};
+        \node[latent, below=of td-factor](d) {$d$};
+        \factor[below=of d, yshift=-0.5cm] {d-factor} {left:$\mathbbm{I}(d>\epsilon)$}{}{};
+        
+        % middle-connections
+        \edge[-]{t1}{td-factor}
+        \edge[-]{t2}{td-factor}
+        \edge[-]{td-factor}{d}
+        \edge[-]{d}{d-factor}
+        
+        
+        \cgate{prior}{(s-factor1)(s-factor1-caption)(s1)(s-factor2)(s-factor2-caption)(s2)}{Prior};
+        \cgate{likelihood}{(sp-factor1)(sp-factor1-caption)(p1)(pt-factor1)(pt-factor1-caption)(t1)
+            (sp-factor2)(sp-factor2-caption)(p2)(pt-factor2)(pt-factor2-caption)(t2)
+            (td-factor)(td-factor-caption)(d)(d-factor)(d-factor-caption)}{Likelihood}
+        
+        % \node[caption, below right=of prior.east] (prior-caption) {Prior};
+        
+        \end{tikzpicture}
+\end{center}
+\caption{Example TrueSkill Factor Graph} \label{fig:ts-van}
+\end{figure}

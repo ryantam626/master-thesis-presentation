@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{\scshape Introduction}{1}{0}{1}
+\beamer@subsectionintoc {1}{1}{Intro}{1}{0}{1}
+\beamer@subsectionintoc {1}{2}{Goals}{2}{0}{1}
+\beamer@sectionintoc {2}{\scshape TrueSkill}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Formulation}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Factor Graph}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Result}{28}{0}{2}
+\beamer@sectionintoc {3}{\scshape State-Aware TrueSkill}{29}{0}{3}
+\beamer@subsectionintoc {3}{1}{Formulation}{29}{0}{3}
+\beamer@subsectionintoc {3}{2}{Results}{30}{0}{3}
+\beamer@sectionintoc {4}{\scshape Conclusion}{33}{0}{4}

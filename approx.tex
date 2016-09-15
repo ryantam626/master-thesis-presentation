@@ -1,0 +1,72 @@
+\begin{frame}{Approximate Message Passing}
+
+\begin{columns}
+	\begin{column}{0.33\textwidth}
+			\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=2,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black] {gauss(0,0.25)};
+\end{axis}
+
+
+\end{tikzpicture}
+\onslide<3->{
+
+\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=2,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black] {gauss(0,0.25)};
+\end{axis}
+
+
+\end{tikzpicture}
+}
+	\end{column}
+	\begin{column}{0.33\textwidth}
+			\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=1.84,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black, domain=-5:0] {line(0)};
+	\addplot [very thick,cyan!50!black, domain=0:5] {line(1)};
+\end{axis}
+
+\end{tikzpicture}
+\onslide<4->{
+\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=2,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black] {gauss(0.6205,0.14)};
+\end{axis}
+
+\end{tikzpicture}
+}
+	\end{column}
+	\begin{column}{0.33\textwidth}
+			\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=2,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black, domain=0:5] {gauss(0,0.25)};
+	\addplot [very thick,cyan!50!black, domain=-5:0] {line(0)};
+	
+\end{axis}
+
+\end{tikzpicture}
+\onslide<2->{
+\begin{tikzpicture}[scale=0.33]
+\begin{axis}[ymin=0,ymax=2,xmax=3,xmin=-3,xticklabel=\empty,yticklabel=\empty,
+               minor tick num=1,axis lines = middle,xlabel=$x$,ylabel=$y$,label style =
+               {at={(ticklabel cs:1.1)}},samples=100]
+	\addplot [very thick,cyan!50!black, domain=0:5] {gauss(0.3989,0.090845)};
+	
+\end{axis}
+
+\end{tikzpicture}
+}
+	\end{column}
+\end{columns}
+\end{frame}

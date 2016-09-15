@@ -1,0 +1,47 @@
+\beamer@endinputifotherversion {3.36pt}
+\headcommand {\sectionentry {1}{\scshape Introduction}{1}{\scshape Introduction}{0}}
+\headcommand {\beamer@sectionpages {1}{0}}
+\headcommand {\beamer@subsectionpages {1}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{1}{Intro}}\headcommand {\beamer@subsectionpages {1}{0}}
+\headcommand {\slideentry {1}{1}{1}{1/1}{Intro}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{2}{Goals}}\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\slideentry {1}{2}{1}{2/5}{Goals}{0}}
+\headcommand {\beamer@framepages {2}{5}}
+\headcommand {\sectionentry {2}{\scshape TrueSkill}{6}{\scshape TrueSkill}{0}}
+\headcommand {\beamer@sectionpages {1}{5}}
+\headcommand {\beamer@subsectionpages {2}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Formulation}}\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\slideentry {2}{1}{1}{6/9}{Formulation}{0}}
+\headcommand {\beamer@framepages {6}{9}}
+\headcommand {\slideentry {2}{1}{2}{10/13}{Formulation}{0}}
+\headcommand {\beamer@framepages {10}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Factor Graph}}\headcommand {\beamer@subsectionpages {6}{13}}
+\headcommand {\slideentry {2}{2}{1}{14/17}{Factor Graph}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\slideentry {2}{2}{2}{18/22}{Factor Graph}{0}}
+\headcommand {\beamer@framepages {18}{22}}
+\headcommand {\slideentry {2}{2}{3}{23/27}{Factor Graph}{0}}
+\headcommand {\beamer@framepages {23}{27}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{28}{Result}}\headcommand {\beamer@subsectionpages {14}{27}}
+\headcommand {\slideentry {2}{3}{1}{28/28}{Result}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\sectionentry {3}{\scshape State-Aware TrueSkill}{29}{\scshape State-Aware TrueSkill}{0}}
+\headcommand {\beamer@sectionpages {6}{28}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{29}{Formulation}}\headcommand {\beamer@subsectionpages {29}{28}}
+\headcommand {\slideentry {3}{1}{1}{29/29}{Formulation}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{30}{Results}}\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\slideentry {3}{2}{1}{30/32}{Results}{0}}
+\headcommand {\beamer@framepages {30}{32}}
+\headcommand {\sectionentry {4}{\scshape Conclusion}{33}{\scshape Conclusion}{0}}
+\headcommand {\beamer@sectionpages {29}{32}}
+\headcommand {\beamer@subsectionpages {30}{32}}
+\headcommand {\slideentry {4}{0}{1}{33/36}{}{0}}
+\headcommand {\beamer@framepages {33}{36}}
+\headcommand {\beamer@partpages {1}{36}}
+\headcommand {\beamer@subsectionpages {33}{36}}
+\headcommand {\beamer@sectionpages {33}{36}}
+\headcommand {\beamer@documentpages {36}}
+\headcommand {\def \inserttotalframenumber {11}}
