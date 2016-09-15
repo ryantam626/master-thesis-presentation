@@ -147,7 +147,7 @@
 				\onslide<2->\node[latent, below=of frs, yshift=-1cm] (r) {$\vec{r}$};
 				\onslide<4-> \factor[above=of r, yshift=1.75cm] {fd}{right:$p(d \given p_1, p_2)$} {} {};
 				\onslide<4-> \node[latent, below=of fd,yshift=0.5cm] (d) {$d$};		
-				\onslide<4-> \factor[below=of d] {frd}{right:$p(r \given d)$} {} {};
+				\onslide<4-> \factor[below=of d] {frd}{right:$p(\vec{r} \given d)$} {} {};
 				
 
 				
@@ -202,10 +202,10 @@
 \node[latent, below=of fsp1, yshift=0.5cm] (p1) {$p_1$};
 \node[latent, below=of fsp2, yshift=0.5cm] (p2) {$p_2$};
 
-\node[latent, below=of frs, yshift=-1cm] (r) {$r$};
+\node[latent, below=of frs, yshift=-1cm] (r) {$\vec{r}$};
 \factor[above=of r, yshift=1.75cm] {fd}{right:$p(d \given p_1, p_2)$} {} {};
 \node[latent, below=of fd,yshift=0.5cm] (d) {$d$};		
-\factor[below=of d] {frd}{right:$p(r \given d)$} {} {};
+\factor[below=of d] {frd}{right:$p(\vec{r} \given d)$} {} {};
 
 \factoredge[-]{fs1}{s1}{fsp1};
 \factoredge[-]{fs2}{s2}{fsp2};
